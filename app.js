@@ -97,9 +97,9 @@ app.get("/logout",(req,res)=>
  }),(req,res)=>{ });
 
 
+var port =process.env.PORT || 3000;
 
-
-    app.listen(process.env.PORT || 8080 ,()=>{
-        console.log("server is started at Port:"+process.env.PORT);
+    app.listen( port,()=>{
+        console.log("server is started ");
     })
 
