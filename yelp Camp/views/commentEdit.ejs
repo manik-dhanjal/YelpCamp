@@ -1,8 +1,0 @@
-<%- include("./partials/header")%>
-
-  <form action="/comment/camp/<%=campId%>/edit/<%=com._id%>" method="post">
-   <textarea name="comment" id="comment" cols="30" rows="10"><%=com.comment%></textarea>
-   <button>Submit</button>
-  </form>
-  <link rel="stylesheet" href="/css/commentEdit.css">
-<%- include("./partials/footer")%>

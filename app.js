@@ -13,7 +13,7 @@ var express    =    require("express"),
     campRoute  =    require("./route/camp-route"),
     commentRoute=   require("./route/comment-route");
   
-    mongoose.connect("mongodb+srv://manik:Manik@7060@yelpcamp-p7jch.mongodb.net/test",{useNewUrlParser:true});
+    mongoose.connect(process.env.DATABASEURL,{useNewUrlParser:true});
 
    
 app.set("view engine","ejs");
@@ -103,4 +103,3 @@ app.get("/logout",(req,res)=>
         console.log("server is started at Port: 8080");
     })
 
-    lorem50
