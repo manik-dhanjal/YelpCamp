@@ -67,8 +67,16 @@ router.get("/:id",(req,res)=>
 router.get("/edit/:id",loggedIn,campAuthentication,(req,res)=>
 {
    camp.findById(req.params.id).populate("user").exec((err,campBody)=>
-   { 
+   {    
+    if(err)
+    {
+      req.flash("InvalidAcsess","campground not found");
+      res.redirect("back");
+    }
+     else
+    {
        res.render("edit",{camp:campBody});
+    }
      })
   
 })
