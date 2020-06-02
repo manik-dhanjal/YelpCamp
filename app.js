@@ -97,7 +97,7 @@ app.get("/logout",(req,res)=>
  }),(req,res)=>{ });
 
 
-var port =process.env.PORT || 3000;
+var port =process.env.PORT;
 
     app.listen( port,()=>{
         console.log("server is started ");
