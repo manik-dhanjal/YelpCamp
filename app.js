@@ -13,7 +13,7 @@ var express    =    require("express"),
     campRoute  =    require("./route/camp-route"),
     commentRoute=   require("./route/comment-route");
   
-    mongoose.connect("  mongodb+srv://manik:<password>@yelpcamp-p7jch.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true});
+    mongoose.connect("mongodb+srv://manik:Manik@7060@yelpcamp-p7jch.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true});
   
    
 app.set("view engine","ejs");
