@@ -1,0 +1,12 @@
+<%-include("./partials/header")%>
+<form action="/campground/edit/<%=camp._id%>" method="post">
+    <h2>Edit <%=camp.place%></h2>
+    <input type="text" placeholder="URL" name="campReq[url]" value="<%=camp.url%>"><br>
+    <input type="text" placeholder="Place" id="place" name="campReq[place]" value="<%=camp.place%>"><br>
+    <textarea name="campReq[desc]" id="desc" cols="30" rows="10" ><%=camp.desc%></textarea>
+    
+  <span> <button type="submit">Submit</button></span> 
+</form>
+<link rel="stylesheet" href="/css/edit.css">
+
+<%- include("./partials/footer")%>

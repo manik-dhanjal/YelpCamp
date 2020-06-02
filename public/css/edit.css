@@ -1,0 +1,42 @@
+form{
+    position: relative;
+    top: 20%;
+    width: 40%;
+    margin: 0rem auto;
+}
+form input{
+    width: 100%;
+    margin: 0.5rem 0px;
+    padding:4px 8px 4px 10px;
+    border-radius: 4px;
+    border: 0.4px solid rgba(0, 0, 0, 0.63);
+    font-size: 1.05rem;
+    font-family: sans-serif;
+
+}
+form textarea{
+    width: 100%;
+    margin: 0.5rem 0px;
+    padding:4px 8px 4px 10px;
+    border-radius: 4px;
+    border: 0.4px solid rgba(0, 0, 0, 0.63);
+    font-size: 1.05rem;
+    font-family: sans-serif;
+}
+button{
+    width: 104%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 111, 1);
+    border-radius: 4px;
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 1.14rem;
+    cursor: pointer;
+    padding:12px 10px 12px 10px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+span:hover button{
+    background-color:  rgb(199, 97, 2);
+}

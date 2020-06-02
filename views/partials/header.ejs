@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelp Camp</title>
+    <link rel="stylesheet" href="/css/nav.css" type="text/css">
+ 
+</head>
+<body>
+    <nav>
+        <div class="brand"><a href="/">Yelp Camp</a></div>
+         <div class="hamburger">
+             <div class="line"> </div>
+             <div class="line"> </div>
+             <div class="line"> </div>
+         </div>
+     
+         
+          <div class="collapse">
+              <ul class="nav-links">
+                  <li><a href="/campground">Campground</a></li>
+                  <li><a href="/campground/add">Add</a></li>
+              </ul>
+              <ul class="identity">
+                  <%if(!currentUser){%>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="/signup">Sign up</a></li>
+                <%}else{%>
+                    <li><a href="#"> Hello <%=currentUser.username%> </a></li>
+                  <li><a href="/logout">Logout</a></li>
+                  <%}%>
+              </ul>
+          </div>
+    </nav>
+
+    <%if(error&&error.length>0){%>
+        <div class="error"><%=error%></div>
+        <%}%>
+    <script src="/js/nav.js"></script>
+
+

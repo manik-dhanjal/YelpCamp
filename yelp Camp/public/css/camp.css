@@ -1,0 +1,181 @@
+.container{
+    width: 80%;
+    margin:0px auto;
+ 
+   
+    
+}
+nav{
+    position: relative;
+}
+
+
+img{
+    
+    margin-top: 20px ;
+   width: 46.8%;
+   margin: 1rem;
+   border:none;
+   border-radius: 4px;
+   
+}
+
+.about{
+    border: 0.4px solid rgba(0, 0, 0, 0.466);
+    border-radius: 4px;
+    padding: 1.4rem;
+  margin: 1rem;
+
+ flex-shrink: 1;
+}
+.about span{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  
+}
+
+.place{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    
+}
+
+.comment{
+    margin: 8px;
+    border: 0.4px solid black;
+    border-radius: 4px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.commentBody{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top:16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+#time{
+    text-align: center;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-top: 0.5rem;
+
+}
+.comment span{
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 1rem;
+}
+
+.commentList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+form{
+ width: 50%;
+ margin: 2rem auto;
+}
+textarea{
+    width: 100%;
+    height: 6rem;
+    margin-top: 5px;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+.btn-comment{
+    color: blanchedalmond;
+    background-color: rgb(95, 59, 255);
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: 0.2s ease;
+}
+.btn{
+    display: inline;
+}
+.btn:hover .btn-comment{
+    background-color: rgb(75, 46, 202);
+}
+
+hr{
+    margin: 1.5rem auto;
+    width: 90%;
+    box-shadow: none;
+   
+}
+.alter{
+ display: inline-block;
+ float: right;
+ margin-bottom: 1rem;
+}
+.alter div{
+    display:inline;
+    margin: 10px 10px 20px 10px ;
+}
+.alter div a  {
+    border: none;
+    border-radius: 5px;
+    padding:0.5rem 2rem 0.4rem 2rem;
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+   
+}
+.edit a{
+    background-color: green;
+ 
+}
+.delete a{
+    background-color: tomato;
+   
+}
+
+.submittedBy{
+    color: grey;
+    font-size: 0.9;
+    display:inline;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.submittedBy span{
+    text-decoration: underline;
+}
+.comment .com-edit {
+    border-radius: 4px;
+    border: none;
+    background-color: green;
+    padding: 4px 5px;
+    margin: 0px 3px;
+    margin-left: 4rem;
+    float: right;
+}
+.comment .com-delete{
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(197, 39, 0);
+    padding: 4px 5px;
+    margin: 0px 3px;
+    float: right;
+  
+    margin-right: 0px;
+}
+
+.comment span a{
+    text-decoration: none;
+    color: white;
+}
+
+.com-bottom{
+display: block;
+}
+

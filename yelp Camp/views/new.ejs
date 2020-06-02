@@ -1,0 +1,11 @@
+<%-include("./partials/header")%>
+<form action="/campground/add" method="post">
+    <input type="text" placeholder="URL" name="campReq[url]"><br>
+    <input type="text" placeholder="Place" id="place" name="campReq[place]"><br>
+    <textarea name="campReq[desc]" id="desc" cols="30" rows="10">Description</textarea>
+    
+  <span> <button type="submit">Submit</button></span> 
+</form>
+<link rel="stylesheet" href="/css/new.css">
+
+<%- include("./partials/footer")%>
