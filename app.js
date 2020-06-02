@@ -99,7 +99,7 @@ app.get("/logout",(req,res)=>
 
 
 
-    app.listen(8080,()=>{
+    app.listen(process.env.PORT,process.env.IP,()=>{
         console.log("server is started at Port: 8080");
     })
 
