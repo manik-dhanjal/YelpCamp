@@ -13,8 +13,8 @@ var express    =    require("express"),
     campRoute  =    require("./route/camp-route"),
     commentRoute=   require("./route/comment-route");
   
-    mongoose.connect("mongodb+srv://manik:Manik@7060@yelpcamp-p7jch.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true});
-  
+    
+    mongoose.connect(process.env.DATABASEURL || "mongodb//localhost:27017/yelpCamp",{useNewUrlParser:true});
    
 app.set("view engine","ejs");
 // passport
@@ -97,7 +97,7 @@ app.get("/logout",(req,res)=>
  }),(req,res)=>{ });
 
 
-var port =process.env.PORT;
+var port =process.env.PORT || 8080;
 
     app.listen( port,()=>{
         console.log("server is started ");
